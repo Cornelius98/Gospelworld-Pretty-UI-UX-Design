@@ -1,0 +1,1784 @@
+/***************************
+* 
+* AUXILLARY: Classes
+*
+*****************************/
+*{
+    margin:0;
+    padding:0;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+.mb-top-most,.mb-nav,.slidein-nav
+{
+    display: none;
+}
+.property-wrap 
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.props-main
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.aux-spm-row-even 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.aux-spm-row-btwn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aux-spm-row-center 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aux-spm-row-start
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.aux-spm-row-end 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.aux-spm-column-start
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.aux-spm-column-center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aux-spm-column-end
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.aux-raw-white
+{
+    background-color: rgb(255, 255, 255);
+    margin-right: 8%;
+}
+.aux-property-tile
+{
+    background-color: rgb(255, 255, 255);
+    margin-right: 35%;
+    border-radius: 10px;
+    padding: 2%;
+}
+.aux-property-tile-mrn
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2%;
+}
+.aux-raw-grey
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.aux-updown-sp 
+{
+    margin: 5% 0% 5% 0%;
+}
+.aux-row-sp-down 
+{
+    margin-bottom: 5%;
+}
+.aux-row-sp-up 
+{
+    margin-top: 5%;
+}
+.aux-sect-sp-top-bottom 
+{
+    padding: 5% 0% 10% 0%;
+}
+.aux-spm-theme-down
+{
+    padding-bottom: 5%;
+}
+/***************************
+* 
+* PROPERTY REVIEW CLASSES
+*
+*****************************/
+.property-image-wrap
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    padding: 2px;
+}
+.property-image-wrap .propert-cover 
+{
+    width: 50%;
+}
+.propert-cover img 
+{
+    width: 100%;
+    height: 69vh;
+}
+.property-image-wrap .propert-pictures
+{
+    width: 50%;
+    text-align: center;
+    overflow-x: visible;
+    padding:0;
+    margin:0;
+}
+.propert-pictures img 
+{
+    width: 220px;
+    height: 155px; 
+    margin-top: 5px;
+}
+.details-price-views 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.details-price-views .details
+{
+    width: 60%;
+}
+.details-price-views .pricing
+{
+    width: 30%;
+}
+.details-price-views .pricing,
+.details-price-views .views
+{
+    width: 20%;
+}
+.details-price-views 
+{
+    background-color: rgb(255, 255, 255);
+}
+.rooms-summary .room-shift 
+{
+    padding-left: 2%;
+}
+.props-views 
+{
+    padding-top: 5%;
+}
+.props-views .dot 
+{
+    margin-bottom: 5%;
+}
+.pricing .name
+{
+    margin-top: 5%;
+}
+.sp-wrap
+{
+    margin: 5%;
+}
+.sp-wrap-01
+{
+    padding: 2% 5% 2% 5%;
+}
+.prop-line-break 
+{
+    margin: 4% 0% 4% 0%;
+}
+.hr-break 
+{
+    margin-right: 35%;
+}
+.desc-title 
+{
+    padding-bottom: 2%;
+}
+.description-email 
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.description-email .description 
+{
+    width: 75%;
+}
+.description-email .description-wrap
+{
+    width: 75%;
+    margin-right: 8%;
+}
+.description-email .email-wrap
+{
+    width: 25%;
+    height: inherit;
+}
+.property-form 
+{
+    padding: 5%;
+}
+.property-form .form-group
+{
+    position: relative;
+    margin-top: 8%;
+}
+.property-form .form-group i
+{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: rgb(58, 58, 153);
+}
+.property-form .form-group input
+{
+    font-size: small;
+    padding-left: 10%;
+    background-color: lightgrey;
+    border-radius: 0%;
+}
+.property-form .form-group textarea
+{
+    font-size: small;
+    padding-left: 7%;
+    background-color: lightgrey;
+}
+.proprty-type 
+{
+    font-size: small;
+    text-transform: uppercase;
+    color: lightgrey;
+}
+.property-name 
+{
+    line-height: 15px;
+}
+.desc-text 
+{
+    font-size: small;
+}
+.property-stats  
+{
+    font-size: small;
+    margin-bottom: 5%;
+}
+.description-wrap 
+{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 10px;
+}
+.stats-card 
+{
+    width: 20%;
+    background-color: orange;
+    height: 100px;
+    padding: 1%;
+    margin: 3px;
+}
+.stats-card-nums,
+.stats-icon i 
+{
+    text-align: right;
+    margin-top: 20px;
+}
+.stats-icon 
+{
+    width: 20%;
+}
+.stats-card-nums
+{
+    width: 80%;
+}
+.start-card-2 
+{
+    background-color: transparent;
+}
+.start-card-2-mr 
+{
+    margin-left: 5%;
+}
+.address-wrap .address
+{
+    width: 70%;
+    padding: 1%;
+    margin-right: 5%;
+}
+.address-wrap .address .rust 
+{
+    margin-top: 1%;
+}
+.address-wrap .map-area 
+{
+    width: 30%;
+}
+.google-map-buttns 
+{
+    margin-top: 5%;
+}
+.nearby .near 
+{
+    width: 20%;
+    display: inline-block;
+    padding: 2%;
+}
+.property-feature 
+{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.property-featured
+{
+    font-size: smaller;
+    color: lightgrey;
+}
+/***************************
+* 
+* FOOTER CLASSES
+*
+*****************************/
+.footer
+{
+    background: url("./assets/beautiful-young-curly-brunette-darkskinned-woman-colorful-blouse-orange-sunglasses-listens-music-headphones-sings-outside_197531-29424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 10%;
+}
+.footer .transparency 
+{
+    background-color: black;
+    padding: 3% 0% 5% 0%;
+    opacity: 0.865667;
+}
+.footer-socials 
+{
+    text-align: right;
+}
+.footer ul 
+{
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.footer h5 
+{
+    color: white;
+    margin-bottom: 10%;
+}
+.footer ul li a,.footer a 
+{
+    text-decoration: none;
+    color: grey;
+}
+.footer .footer-quick-links a
+{
+    margin: 1%;
+}
+.footer .omae 
+{
+    color: orange;
+}
+.footer .omae-software
+{
+    color: rgb(231, 231, 231);
+}
+/***************************
+* 
+* TOP NAVIGATION CLASSES
+*
+*****************************/
+header[class="main-app"]
+{
+    background: url("./assets/african-american-musician-playing-ukulele-beach_53876-74897-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+    box-sizing: border-box;
+}
+.htransparency .hero-text 
+{
+   margin-top: 28%;
+}
+.htransparency .hero-text-page
+{
+   margin-top: 15%;
+}
+.htransparency 
+{
+    background-color: black;
+    height: 100vh;
+    opacity: 0.877786;
+    padding-top: 2%;
+}
+.min-app 
+{
+    background: url("./assets/african-american-musician-playing-ukulele-beach_53876-74897-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    object-fit: scale-down;
+    color: white;
+}
+.htransparency-page
+{
+    background-color: black;
+    opacity: 0.8997678;
+    padding-top: 2%;
+    height: 70vh;
+}
+.htransparency-page-search
+{
+    background-color: black;
+    opacity: 0.8997678;
+    padding-top: 2%;
+    height: 90vh;
+}
+.min-app-search 
+{
+    height: 90vh;
+}
+.h-links 
+{
+    color: white;
+}
+.h-icons .fa
+{
+    background-color: rgb(14, 204, 14);
+    padding: 3%;
+    color: white;
+    border-radius: 125px;
+}
+header ul
+{
+    text-align: left;
+}
+header ul
+{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+header ul li
+{
+    display: inline-block;
+    text-align: left;
+}
+header ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: small;
+}
+header.min-app ul
+{
+    text-align: left;
+}
+header.min-app  ul
+{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+header.min-app  ul li
+{
+    display: inline-block;
+    text-align: left;
+}
+header.min-app ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: small;
+}
+.props-nav-link 
+{
+    padding-left: 2%;
+}
+.h-icons .icons
+{
+    text-align: right;
+}
+.cool .fa-search,
+.cool .fa-heart
+{
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    padding: 30%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.h-icons div 
+{
+    width: 100%;
+}
+.h-contacts 
+{
+    font-size: small;
+}
+.h-contacts .phone
+{
+    padding-right: 2%;
+}
+.break-contacts 
+{
+    margin-bottom: 3%;
+}
+.form-001
+{
+    width: 100%;
+}
+.form-001 .form-group
+{
+    position: relative;
+}
+.form-001 .form-group input 
+{
+    width: 100%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-001 .form-group .fa-search 
+{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    color: black;
+}
+/***************************
+* 
+* Premium Homes Section
+*
+*****************************/
+.premium-wrap
+{
+    background-color: rgba(240, 240, 240, 0.795);
+    padding: 5% 0% 10% 0%;
+}
+.premium-theme 
+{
+    padding: 0% 0% 5% 0%;
+}
+.estate-card 
+{
+    position: relative;
+    background-color: whitesmoke;
+}
+.estate-card img 
+{
+    width: 100%;
+    height: 250px;
+}
+.estate-img .estate-taggs 
+{
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    top: 3%;
+}
+.estate-img .estate-gps 
+{
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    top: 47%;
+}
+.estate-img .estate-gps a 
+{
+    background-color: rgb(14, 204, 14);
+    padding: 2%;
+    color: white;
+    border-radius: 5px;
+}
+.estate-brand
+{
+    background-color: rgb(14, 204, 14);
+}
+.estate-nature 
+{
+    background-color: rgb(14, 204, 14);
+}
+.estate-nature ,.estate-brand 
+{
+    padding: 1%;
+    text-transform: uppercase;
+    color: white;
+    font-size: x-small;
+    font-weight: bolder;
+}
+.estate-name .est-name
+{
+    line-height: 15px;
+}
+.estate-name .est-name .estate-property-type 
+{
+    color:grey;
+    font-size: small;
+}
+.estate-transparency 
+{
+    height: 250px;
+    background-color: black;
+}
+.estate-price 
+{
+    background-color: rgb(14, 204, 14);
+    color: white;
+    padding: 3%;
+    border-radius: 125px;
+    font-size: small;
+    position: absolute;
+    top: 49%;
+    right: 6%;
+    text-align: center;
+    line-height: 10px;
+    width: 70px;
+    height: 70px;
+}
+.estate-details
+{
+    padding: 3%;
+}
+.estate-name 
+{
+    margin: 3% 0% 10% 0%;
+}
+.contact-property .fa,
+.contact-property .fab
+{
+    background-color:green;;
+    padding: 3%;
+    color: rgb(255, 255, 255);
+    border-radius: 125px;
+}
+.est-views
+{
+    width: 20%;
+}
+.contact-property 
+{
+    width: 80%;
+    text-align: right;
+}
+/***************************
+* 
+* Properties Section
+*
+*****************************/
+.main-props-wrap 
+{
+    width: 80%;
+}
+.aside-props-wrap
+{
+    width: 20%;
+    margin-top: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.aside-props-wrap img 
+{
+    width: 100%;
+    border-radius: 10px;
+    height: 512px;
+    background-size: cover;
+    margin-left: 5px;
+}
+.main-props-wrap 
+{
+    height: 515px;
+}
+.main-props-wrap .streteched-props 
+{
+    width: 70%;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+}
+.main-props-wrap .shortened-props 
+{
+    width: 30%;
+    position: relative;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.props-transparency 
+{
+    height: 250px;
+    background-color: black;
+    opacity: 0.7756453;
+    border-radius: 10px;
+}
+.aside-props-transparency 
+{
+    height: 512px;
+    padding: 2px;
+    background-color: black;
+    opacity: 0.7756453;
+    border-radius: 10px;
+}
+.streteched-props .props-hero-text,
+.shortened-props .props-hero-text, 
+.aside-props-wrap .props-hero-text 
+{
+    position: absolute;
+    bottom: 2%;
+}
+.main-props-wrap .streteched-props img,
+.main-props-wrap .shortened-props img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.props-hero-text
+{
+    color: white;
+    line-height: 9px;
+    margin-left: 5%;
+}
+.props-hero-theme
+{
+    font-size: x-large;
+    font-weight: 500;
+}
+.streteched-props .props-hero-text
+{
+    margin-left: 2%;
+}
+.shortened-props .props-hero-text
+{
+    margin-left: 3%;
+}
+/***************************
+* 
+* Rental Properties Section
+*
+*****************************/
+.rental-wrap
+{
+    background-color: rgba(240, 240, 240, 0.795);
+    padding: 5% 0% 10% 0%;
+}
+/***************************
+* 
+* Cities Section
+*
+*****************************/
+.cities-wrap 
+{
+    /* background: url("./assets/houses/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white; */
+    color: white;
+}
+.citie-card 
+{
+    margin: .5%;
+    position: relative;
+}
+.cities-transparency 
+{
+    background-color: rgb(14, 13, 13);
+}
+.citie-card .props-hero-text 
+{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    margin-left: 2%;
+    text-align: left;
+}
+/***************************
+* 
+* Province Section
+*
+*****************************/
+.state-card 
+{
+    margin: .5%;
+    position: relative;
+}
+.state-transparency 
+{
+    background-color: rgb(255, 255, 255);
+}
+.state-card .props-hero-text 
+{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: left;
+}
+@keyframes slideIn
+{
+    0%{
+        opacity: 0.2432;
+    }
+    50%{
+        opacity: 0.5432;
+    }
+    70%{
+        opacity: 0.6432;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.slide-out 
+{
+    transform: translateX(400%);
+    transition: transform 0.5s ease-out;
+    animation-name: slideIn;
+    animation-timing-function: ease-out;
+}
+.slide-out:nth-of-type(even)
+{
+    transform: translateX(-400%);
+} 
+.slide-out.show {
+    transform: translateX(0%);
+}
+.state-cards 
+{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+.state-cards .aside-props-wrap 
+{
+    min-width: 25%;
+}
+.state-cards .state-card 
+{
+    width: 100%;
+}
+.state-swipe 
+{
+    background-color: rgb(209, 209, 209);
+    padding: 2%;
+    border-radius: 125px;
+}
+.city-swipe 
+{
+    background-color: rgb(19, 19, 19);
+    padding: 2%;
+    border-radius: 125px;
+    color: white;
+}
+.more-swipe 
+{
+    background-color: rgb(14, 204, 14);
+    padding: 2%;
+    border-radius: 125px;
+    color: white;
+}
+.cities-cards 
+{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+.cities-cards .aside-props-wrap 
+{
+    min-width: 25%;
+}
+.citie-cards .state-card 
+{
+    width: 100%;
+}
+.cities-cards .aside-props-wrap:hover,
+.state-cards .aside-props-wrap:hover 
+{
+    transition: 2s;
+    transform: translateY(1%);
+}
+.estate-card:hover
+{
+    transition: all 2s;
+    transform: translateY(5%);
+}
+.streteched-props:hover,
+.shortened-props:hover,
+.aside-props:hover
+{
+    transition: all 2s;
+    transform: scale(0.9);
+    transition-timing-function: ease-out;
+}
+.slidein-nav,.mb-nav
+{
+    display: none;
+}
+.cities-cards-page 
+{
+    overflow-x: hidden;
+    text-align: center;
+}
+.cities-cards-page .aside-props-wrap
+{
+    overflow-x: hidden;
+    display: inline-block;
+}
+.cities-cards-page .aside-props-wrap  
+{
+    min-width: 23%;
+}
+.state-cards-page 
+{
+    overflow-x: hidden;
+    text-align: center;
+}
+.state-cards-page .aside-props-wrap
+{
+    overflow-x: hidden;
+    display: inline-block;
+}
+.state-cards-page .aside-props-wrap  
+{
+    max-width: 23%;
+    min-width: 23%;
+}
+.state-cards-page .state-card 
+{
+    max-width: 23%;
+    min-width: 23%;
+}
+/***************************
+* 
+* Privacy Policy Page
+*
+*****************************/
+.gwa-intro 
+{
+    line-height: 14px;
+}
+.gwa-intro small 
+{
+    font-size: x-small;
+}
+.gwp-wrap 
+{
+    background-color: rgb(243, 243, 243);
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+.gwp-wrap .container-fluid 
+{
+    padding: 5%;
+}
+.sub-sect 
+{
+    padding-left: 2%;
+}
+.sub-sect-00
+{
+    padding-left: 7%;
+}
+.sub-break 
+{
+    padding-left: 2%; 
+}
+.clause-title 
+{
+    margin-top: 3%;
+}
+/***************************
+* 
+* Realtor Card
+*
+*****************************/
+.realtor-card 
+{
+    /* border: 2px solid red; */
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.realtor-card .realtor-img 
+{
+    text-align: center;
+}
+.realtor-card img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 125px;
+    text-align: center;
+}
+.realtor-company 
+{
+    color: rgb(192, 192, 192);
+}
+.realtor-break 
+{
+    margin: 30% 0% 4% 0%;
+}
+.realtor-links .fa,
+.realtor-links .fab
+{
+    background-color: rgb(62, 62, 138);
+    padding: 10%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.year-word-wrap
+{
+    line-height: 15px;
+}
+.experience 
+{
+    color: grey;
+}
+.projects 
+{
+    text-align: center;
+}
+.projects .estimate
+{
+    background-color: rgb(62, 62, 138);
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.experience .years 
+{
+    line-height: 12px;
+    font-size: medium;
+}
+.realtor-links .engagement 
+{
+    color: rgb(155, 152, 152);
+}
+.more-realtors 
+{
+    background-color: rgb(62, 62, 138);
+    color: white;
+}
+.comapny-card .projects .estimate
+{
+    background-color: rgb(15, 175, 23);
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.comapny-card .realtor-links .fa,
+.comapny-card .realtor-links .fab
+{
+    background-color: rgb(15, 175, 23);
+    padding: 10%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.more-companies
+{
+    background-color: rgb(15, 175, 23);
+    color: white;
+}
+.form-002 
+{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.form-002 .form-group 
+{
+    text-align: left;
+    margin: 3px;
+} 
+.form-002 .form-group input, 
+.form-002 .form-group select, 
+.form-002 .form-group select 
+{
+    width: 100%;
+    height: 50px;
+    padding: 2%;
+    border: 1px solid grey;
+    outline: none;
+}
+.form-002 .search-icon 
+{
+    display: flex;
+    flex-direction: row;
+}
+.form-002 .search-icon .fa-search
+{
+    background-color: green;
+    width: 100px;
+    text-align: center;
+    padding-top: 7%;
+}
+.form-002 .form-group label 
+{
+    color: black;
+    font-weight: bolder;
+}
+/***************************
+* 
+* Music Card
+*
+*****************************/
+.trending-music 
+{
+    background-color: rgb(15, 14, 14);
+}
+.trending-music .section-title 
+{
+    color: rgb(245, 245, 245);
+    font-weight: bolder;
+}
+.trending-music .premium-theme-text
+{
+    color: rgb(199, 199, 199);
+}
+.music-card 
+{
+    background: url("./assets/beautiful-young-curly-brunette-darkskinned-woman-colorful-blouse-orange-sunglasses-listens-music-headphones-sings-outside_197531-29424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-sizing: border-box;
+    object-fit:scale-down;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+}
+.music-card .music-stats
+{
+    padding-top: 1%;
+}
+.music-card .music-card-transparency 
+{
+    height: 450px;
+    background-color: black;
+    opacity: 0.7767545;
+    padding: 4%;
+    position: relative;
+    border-radius: 10px;
+}
+.music-card .music-stats 
+{
+    font-size: small;
+}
+.music-card .music-stats-views,
+.music-card .music-stats-shares
+{
+    margin:0% 2% 0% 2%;
+}
+.music-stats-format i 
+{
+    background-color: rgb(14, 204, 14);
+    color: white;
+    padding: 2%;
+    border-radius: 125px;
+    font-size: smaller;
+}
+.music-card .music-format 
+{
+    font-size: small;
+}
+.music-card .music-details
+{
+    position: absolute;
+    bottom: 2%;
+    line-height: 16px;
+    width: 100%;
+}
+.music-location 
+{
+    color: grey;
+}
+.music-shares 
+{
+    margin-top: 5%;
+    width: 100%;
+}
+.music-shares i 
+{
+    margin-right: 6%;
+}
+.music-shares .shares,
+.music-shares .music-stats-download
+{
+    width: 50%;
+}
+.music-shares .music-stats-download
+{
+    text-align: right;
+    padding-right: 4%;
+    font-size: small;
+}
+.music-section 
+{
+    background-color: rgba(240, 240, 240, 0.795); 
+}
+.properties-wrap 
+{
+    background: url("./assets/beautiful-sportive-boy-dancing-hiphop-stylish-clothes-colorful-gradient-background-dance-hall-neon-light_155003-46081.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-sizing: border-box;
+    object-fit:scale-down;
+}
+.state-wrap,.state-transparency
+{
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+.footer-free 
+{
+    margin-top: 0%;
+}
+.preview .chart-aside 
+{
+    margin-top: 5.5%;
+}
+.chart-aside-title 
+{
+    background-color: rgb(14, 204, 14);
+    color: white;
+    padding: 3%;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bolder;
+}
+.chart:nth-of-type(even)
+{
+    margin-top: 1%;
+    border-right: 3px solid rgb(245, 22, 96);
+}
+.chart:nth-of-type(odd)
+{
+    margin-top: 1%;
+    border-right: 3px solid rgb(166, 255, 0);
+}
+.chart-count
+{
+    background-color: rgb(14, 204, 14);
+    color: white;
+    padding: 1%;
+    width: 20%;
+    text-align: center;
+    font-weight: bolder;
+}
+.chart-item 
+{
+    color: white;
+    padding: 2%;
+    font-size: small;
+    text-align: left;
+}
+.more-section 
+{
+    background-color: rgb(255, 255, 255);
+}
+.preview 
+{
+    padding-top: 3%;
+    padding-bottom: 10%;
+    color: white; 
+    background-color: rgb(32, 28, 28);
+}
+.preview-img-wrap .preview-img
+{
+    min-width: 100%;
+    margin:0;
+    padding:0;
+    margin-top: 2%;
+}
+.preview-img-wrap .preview-img img 
+{
+    min-width: 100%;
+}
+.taggs
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.taggs .tag 
+{
+    background-color: rgb(14, 204, 14);
+    font-size: small;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.prev-stat 
+{
+    width: 30%;
+    margin-top: 5%;
+}
+.stat-prev 
+{
+    margin-left: 15%;
+}
+.prev-stat i 
+{
+    background-color: rgb(14, 204, 14);
+    padding: 20%;
+    border-radius: 125px;
+    color: white;
+}
+.share-platforms 
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.share-platforms .share
+{
+   width: 30%;
+}
+.description 
+{
+    padding-top: 5%;
+}
+.download-button 
+{
+    width: 100%;
+    margin-top: 2%;
+}
+.share-facebook 
+{
+    background-color:#4267B2;
+}
+.share-twitter 
+{
+    background-color:#00acee;
+}
+.share-whatsapp 
+{
+    background-color:#25D366;
+}
+.share-instagram 
+{
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.share 
+{
+    color: white;
+    padding: 2%;
+}
+.prev-stat-number 
+{
+    margin-top: 10%;
+}
+.prev-stat-name 
+{
+    font-size: small;
+    font-weight: bolder;
+    font-style: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+.chart-wrap 
+{
+    border-bottom: 1px solid rgb(14, 204, 14); 
+}
+.social-pages 
+{
+    width: 100%;
+    margin-top: 5%;
+}
+.social-pages .share-platforms
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.social-pages .share-platforms .share 
+{
+    width: 100%;
+    margin-top: 1%;
+    padding: 5%;
+}
+.publish-date 
+{
+    font-size: small;
+}
+.description-hr
+{
+    background-color: rgb(14, 204, 14); 
+    font-weight: bolder;
+
+}
+.download-button 
+{
+    background-color: rgb(14, 204, 14);
+    border: 2px solid rgb(14, 204, 14);
+}
+.htransparency-page .header-text 
+{
+    position: absolute;
+    bottom: 45%;
+    padding: 0% 6% 0% 3%;
+}
+.page-theme 
+{
+    width: 90%;
+}
+.page-theme .hero-theme-2 
+{
+    text-transform: uppercase;
+}
+.hero-theme 
+{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.hero-theme 
+{
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.page-number 
+{
+    background-color: #25D366;
+    color: white;
+    padding: 2%;
+}
+.arrow-btn 
+{
+    background-color: #25D366;
+    color: white;
+    padding: 2%;
+    margin: 2px;
+}
+.page-number-wrap ,.arrow-wrap
+{
+    width: 50%;
+}
+.htransparency-page-search .header-text
+{
+    position: absolute;
+    bottom: 13%;
+    padding: 0% 6% 0% 3%;
+}
+.search-result-wrap,
+.search-result-wrap .music-section
+{
+    background-color: rgb(230, 230, 230);
+}
+@media screen and (max-width: 768px){
+    .dsk-top-most,.dsk-list-options
+    {
+        display: none;
+    }
+    .mb-top-most
+    {
+        display: block;
+        padding-top: 3%;
+    }
+    .mb-nav 
+    {
+        display: flex;
+        padding: 4% 2% 2% 2%;
+    }
+    .mb-nav .fa-bars 
+    {
+        padding: 3%;
+        border-radius: 10px;
+    }
+    .real-phone,.real-email 
+    {
+        display: none;
+    }
+    .mo-icons, .mo-iconies 
+    {
+        width: 50%;
+    }
+    .mo-icons .fa, 
+    .mo-icons .fab 
+    {
+        border: 1px solid rgb(14, 204, 14);
+        padding: 5%;
+        border-radius: 125px;
+    }
+    .mo-iconies 
+    {
+        text-align: right;
+        color: white;
+    }
+    .mo-icons 
+    {
+        text-align: left;
+    }
+    .mo-iconies .fa 
+    {
+        color: white;
+        padding: 7%;
+        border-radius: 125px;
+        background-color: rgb(14, 204, 14);
+    }
+    .m-splitter 
+    {
+        padding: 2%;
+    }
+    .slidein-nav 
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 5000;
+        height: 100vh;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        width: 100%;
+        padding: 5%;
+    }
+    .slidein-nav ul li
+    {
+        display: block;
+    }
+    .htransparency 
+    {
+        background-color: black;
+        height: 100vh;
+        padding-top: 2%;
+    }
+    .htransparency 
+    {
+        position: relative;
+        text-align: center;
+    }
+    .htransparency .header-text 
+    {
+        position: absolute;
+        bottom: 10%;
+        padding: 0% 6% 0% 3%;
+    }
+    .cities-cards .aside-props-wrap,
+    .state-cards .aside-props-wrap
+    {
+        min-width: 60%;
+    }
+    .state-card,.estate-card,.realtor-card
+    {
+        margin-top: 5%;
+    }
+    .props-wrap 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-props-wrap 
+    {
+        width: 100%;
+    }
+    .main-props-wrap .streteched-props 
+    {
+        width: 60%;
+        position: relative;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .main-props-wrap .shortened-props 
+    {
+        width: 40%;
+        position: relative;
+        height: 250px;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .props-wrap .aside-props-transparency 
+    {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        opacity: 0.7756453;
+        border-radius: 10px;
+    }
+    .props-wrap .aside-props-wrap 
+    {
+        width: 100%;
+    }
+    .props-hero-theme 
+    {
+        font-size: large;
+    }
+    .props-hero-desc 
+    {
+        font-size: smaller;
+    }
+    .cities-cards-page .aside-props-wrap  
+    {
+        min-width: 48%;
+    }
+    .state-cards-page .aside-props-wrap  
+    {
+        max-width: 48%;
+        min-width: 48%;
+    }
+    .state-cards-page .state-card 
+    {
+        max-width: 48%;
+        min-width: 48%;
+    }
+    .htransparency-preview .header-text 
+    {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 28%;
+    }
+
+    .preview-img-wrap .preview-img
+    {
+        width: 100%;
+        margin-top: 2%;
+    }
+    .preview-img-wrap .preview-img img 
+    {
+        width: 100%;
+        height: 200px;
+    }
+    .prev-stat 
+    {
+        width: 30%;
+        margin-top: 5%;
+    }
+    .stat-prev 
+    {
+        margin-left: 5%;
+    }
+    .prev-stat i 
+    {
+        background-color: rgb(14, 204, 14);
+        padding: 20%;
+        border-radius: 125px;
+        color: white;
+    }
+    .publish-date 
+    {
+        font-size: x-small;
+    }
+    .share-platforms 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .share-platforms .share
+    {
+        width: 100%;
+        margin-top: 1%;
+        padding: 5%;
+    }
+    .htransparency-page
+    {
+        background-color: black;
+        opacity: 0.8997678;
+        padding-top: 2%;
+        height: 75vh;
+    }
+    .htransparency-page .header-text 
+    {
+        position: absolute;
+        bottom: 30%;
+        padding: 0% 6% 0% 3%;
+        width: 100%;
+    }
+    .page-number 
+    {
+        background-color: #25D366;
+        color: white;
+        padding: 3%;
+    }
+    .arrow-btn 
+    {
+        background-color: #25D366;
+        color: white;
+        padding: 4%;
+        margin: 2px;
+    }
+    .htransparency-page-search 
+    {
+        height: 90vh;
+    }
+    .htransparency-page-search .header-text
+    {
+        position: absolute;
+        bottom: -25%;
+        padding: 0;
+        margin-right: 20%;
+    }
+    .form-002 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .form-002 .form-group 
+    {
+        text-align: left;
+        margin: 3px;
+    } 
+    .form-002 .form-group input, 
+    .form-002 .form-group select, 
+    .form-002 .form-group select 
+    {
+        width: 100%;
+        height: 50px;
+        padding: 2%;
+        border: 1px solid grey;
+        outline: none;
+    }
+    .form-002 .search-icon 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-002 .search-icon .fa-search
+    {
+        background-color: green;
+        width: 100px;
+        text-align: center;
+        padding-top: 7%;
+    }
+    .form-002 .form-group label 
+    {
+        color: black;
+        font-weight: bolder;
+    }
+    .search-result-wrap 
+    {
+        margin-top:70%;
+    }
+}
